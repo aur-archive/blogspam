@@ -1,0 +1,10 @@
+[Unit]
+Description=Blog-Spam XML-RPC service
+After=network.target
+
+[Service]
+User=s-blogspam
+ExecStart=/usr/bin/vendor_perl/blogspam
+
+[Install]
+WantedBy=multi-user.target
